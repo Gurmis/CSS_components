@@ -1,0 +1,42 @@
+.site-header {
+    background: $color-header;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        li {
+            display: inline-block;
+            color: darken( $color-text, 70% );
+            
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 30px 15px;
+                font-size: 95%;
+                
+                &:hover {
+                cursor: pointer;
+                color: darken( $color-text, 20% );
+                transition: .2s ease-in-out;
+                                                        
+                }
+                
+               
+                
+                
+                }
+                
+                
+            }
+        }
+    }
+
+    
+@each $page, $color in $color-mains {
+    .#{$page} nav a.active {
+        color: lighten($color, 10%);
+    }
+}
+

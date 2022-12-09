@@ -1,0 +1,24 @@
+@mixin box-sizing( $value: border-box ) {
+-webkit-box-sizing: $value;
+   -moz-box-sizing: $value;
+        box-sizing: $value;   
+}
+
+@mixin selection {
+::-moz-selection {@content}
+::selection {@content}
+}
+
+@mixin color-mains ($color-mains) {
+    background-color: $color-mains;
+    
+}
+
+@each $page, $color in $color-mains {
+    .#{$page} main {
+        @include color-mains($color);
+        border-top: 1px solid darken($color, 10%);
+            
+    }
+}
+

@@ -1,0 +1,78 @@
+.page3 {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10px;
+        align-items: center;
+    }
+    .wrapper {
+        position: relative;
+//        display: flex;
+        height: 4rem;
+        margin-top: 20px;
+    }
+    
+    .label {
+        position: absolute;
+        top: 50%;
+        left: 0.65rem;
+        transform: translateY(-50%);
+        color: #585656;
+        padding: 0.25rem 0.5rem;
+        pointer-events: none;
+        transition: all 0.35s;
+    }
+    
+    .account_circle {
+        position: absolute;
+        top: 50%;
+        left: 14rem;
+        transform: translateY(-50%);
+        font-size: 1.6785rem;
+        color: #585656;
+        transition: all 0.35s;
+        fill: #585656;
+    }
+    
+    .icon {
+         
+        display: inline-block;
+    }
+     
+    
+    
+    input { 
+        height: inherit;
+        width: 16rem;
+        border: 2px solid #585656;
+        border-radius: 0.5rem;
+        outline: none;
+        background: transparent;
+        color: #f7f7f7;
+        font-size: 1rem;
+        text-indent: 1rem;
+        transition: all 0.35s;
+    }
+    
+    input:focus { border-color: #8f44fd; }
+    input:focus ~ .icon svg { fill: #fff; }
+    
+    input:focus ~ .label {
+        background: $color-main3;
+        color: rgba(255, 255, 255, 0.75);
+        transform: translateY(-2.875rem);
+    }
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

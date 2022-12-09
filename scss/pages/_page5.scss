@@ -1,0 +1,67 @@
+.page5 {
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 30px;
+        margin-top: 45px;
+        
+    }
+    
+    .gauge {
+        display: grid;
+        place-items: center;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        cursor: default;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        
+        &.one {
+            color: white;
+            background: conic-gradient(white 0% 32%, #303238 32% 100%);
+            
+           
+        }
+        
+        &.two {
+            color: #4fd879;
+            background: conic-gradient(#4fd879 0% 54%, #303238 54% 100%);
+        }
+        
+        &.three {
+            color: yellow;
+            background: conic-gradient(yellow 0% 18%, #303238 18% 100%);
+            
+        
+        }
+        small {
+            z-index: 3;
+        }
+    }
+    
+    .gauge-inner {
+        display: grid;
+        place-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #1d1e22;
+       
+        transition: all 0.2s ease-in-out;
+        
+        &:hover {
+            transform: scale(1.1);
+            
+            
+            }
+        }
+
+    
+    
+    
+    
+}
